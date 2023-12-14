@@ -118,7 +118,7 @@ const updatedbook={...readbook,isRead: !readbook.isRead};
 const index =books.findIndex((book)=>book.id === readbook.id)
 
 
-const clonebooks={...books}
+const clonebooks=[...books]
 clonebooks[index]=updatedbook;
 setBooks(clonebooks)
 }
